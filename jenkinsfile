@@ -12,6 +12,12 @@ pipeline{
                 sh "mvn clean"
             }
         }
+        
+         stage("execute tests Android") {
+            steps {
+                sh "mvn test -DSO='ANDROID'"
+            }
+        }
     }
     
     post {
