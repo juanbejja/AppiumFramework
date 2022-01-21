@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="eci.qa.AppiumFramework.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="eci.qa.AppiumFramework.firstIOSTest">
+        <methods>
+          <include name="validarTituloServices"/>
+          <include name="killProcess"/>
+          <include name="killAllNodes"/>
+        </methods>
+      </class> <!-- eci.qa.AppiumFramework.firstIOSTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,66 @@
+2022-01-20 10:19:54:654 [Appium] Welcome to Appium v1.22.2
+2022-01-20 10:19:54:655 [Appium] Non-default server args:
+2022-01-20 10:19:54:656 [Appium]   sessionOverride: true
+2022-01-20 10:19:54:656 [Appium]   logFile: /Users/juan.pablo.bejarano/eclipse-workspace/AppiumFramework/appiumServerLog.txt
+2022-01-20 10:19:54:677 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2022-01-20 10:19:55:021 [HTTP] --> GET /wd/hub/status
+2022-01-20 10:19:55:022 [HTTP] {}
+2022-01-20 10:19:55:024 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2022-01-20 10:19:55:026 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.2"}}
+2022-01-20 10:19:55:034 [HTTP] <-- GET /wd/hub/status 200 8 ms - 68
+2022-01-20 10:19:55:035 [HTTP] 
+2022-01-20 10:19:55:104 [HTTP] --> GET /wd/hub/session/adf75132-0bd6-4a1f-a9e3-70fccf60aa87/timeouts
+2022-01-20 10:19:55:104 [HTTP] {}
+2022-01-20 10:19:55:128 [GENERIC (adf75132)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2022-01-20 10:19:55:129 [GENERIC (adf75132)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2022-01-20 10:19:55:129 [GENERIC (adf75132)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2022-01-20 10:19:55:129 [GENERIC (adf75132)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2022-01-20 10:19:55:129 [GENERIC (adf75132)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2022-01-20 10:19:55:129 [GENERIC (adf75132)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2022-01-20 10:19:55:130 [GENERIC (adf75132)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2022-01-20 10:19:55:130 [GENERIC (adf75132)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2022-01-20 10:19:55:130 [GENERIC (adf75132)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2022-01-20 10:19:55:130 [GENERIC (adf75132)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2022-01-20 10:19:55:130 [GENERIC (adf75132)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2022-01-20 10:19:55:130 [GENERIC (adf75132)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2022-01-20 10:19:55:130 [GENERIC (adf75132)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2022-01-20 10:19:55:130 [GENERIC (adf75132)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2022-01-20 10:19:55:131 [GENERIC (adf75132)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2022-01-20 10:19:55:131 [GENERIC (adf75132)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2022-01-20 10:19:55:131 [GENERIC (adf75132)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2022-01-20 10:19:55:133 [HTTP] <-- GET /wd/hub/session/adf75132-0bd6-4a1f-a9e3-70fccf60aa87/timeouts 404 28 ms - 1948
+2022-01-20 10:19:55:133 [HTTP] 
+2022-01-20 10:19:55:377 [HTTP] --> POST /wd/hub/session
+2022-01-20 10:19:55:377 [HTTP] {"desiredCapabilities":{"app":"/Users/juan.pablo.bejarano/Desktop/elcorteinglesPRE.apk","automationName":"UIAutomator2","platformName":"Android","deviceName":"emuladorECI"},"capabilities":{"firstMatch":[{"appium:app":"/Users/juan.pablo.bejarano/Desktop/elcorteinglesPRE.apk","appium:automationName":"UIAutomator2","appium:deviceName":"emuladorECI","platformName":"android"}]}}
+2022-01-20 10:19:55:377 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"/Users/juan.pablo.bejarano/Desktop/elcorteinglesPRE.apk","automationName":"UIAutomator2","platformName":"Android","deviceName":"emuladorECI"},null,{"firstMatch":[{"appium:app":"/Users/juan.pablo.bejarano/Desktop/elcorteinglesPRE.apk","appium:automationName":"UIAutomator2","appium:deviceName":"emuladorECI","platformName":"android"}]}]
+2022-01-20 10:19:55:378 [BaseDriver] Event 'newSessionRequested' logged at 1642673995378 (11:19:55 GMT+0100 (Central European Standard Time))
+2022-01-20 10:19:55:705 [Appium] Appium v1.22.2 creating new AndroidUiautomator2Driver (v1.70.1) session
+2022-01-20 10:19:55:705 [Appium] There are no active sessions for cleanup
+2022-01-20 10:19:55:707 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2022-01-20 10:19:55:707 [BaseDriver] Creating session with W3C capabilities: {
+2022-01-20 10:19:55:707 [BaseDriver]   "alwaysMatch": {
+2022-01-20 10:19:55:707 [BaseDriver]     "platformName": "android",
+2022-01-20 10:19:55:707 [BaseDriver]     "appium:app": "/Users/juan.pablo.bejarano/Desktop/elcorteinglesPRE.apk",
+2022-01-20 10:19:55:708 [BaseDriver]     "appium:automationName": "UIAutomator2",
+2022-01-20 10:19:55:708 [BaseDriver]     "appium:deviceName": "emuladorECI"
+2022-01-20 10:19:55:708 [BaseDriver]   },
+2022-01-20 10:19:55:708 [BaseDriver]   "firstMatch": [
+2022-01-20 10:19:55:708 [BaseDriver]     {}
+2022-01-20 10:19:55:708 [BaseDriver]   ]
+2022-01-20 10:19:55:708 [BaseDriver] }
+2022-01-20 10:19:55:715 [BaseDriver] Session created with session id: 3ab7e393-3f02-4858-a528-bbdf9c24819b
+2022-01-20 10:19:55:717 [BaseDriver] Using local app '/Users/juan.pablo.bejarano/Desktop/elcorteinglesPRE.apk'
+2022-01-20 10:19:55:717 [UiAutomator2] Checking whether app is actually present
+2022-01-20 10:19:55:724 [UiAutomator2] Deleting UiAutomator2 session
+2022-01-20 10:19:55:725 [BaseDriver] Event 'newSessionStarted' logged at 1642673995725 (11:19:55 GMT+0100 (Central European Standard Time))
+2022-01-20 10:19:55:760 [W3C] Encountered internal error running command: Error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+2022-01-20 10:19:55:760 [W3C]     at requireSdkRoot (/usr/local/lib/node_modules/appium/node_modules/appium-adb/lib/helpers.js:36:11)
+2022-01-20 10:19:55:760 [W3C]     at Function.createADB (/usr/local/lib/node_modules/appium/node_modules/appium-adb/lib/adb.js:57:23)
+2022-01-20 10:19:55:760 [W3C]     at Object.createBaseADB (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/android-helpers.js:129:20)
+2022-01-20 10:19:55:761 [W3C]     at Object.getDeviceInfoFromCaps (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/android-helpers.js:214:29)
+2022-01-20 10:19:55:761 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-driver/lib/driver.js:338:40)
+2022-01-20 10:19:55:761 [W3C]     at AndroidUiautomator2Driver.createSession (/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-driver/lib/driver.js:229:18)
+2022-01-20 10:19:55:761 [W3C]     at AppiumDriver.createSession (/usr/local/lib/node_modules/appium/lib/appium.js:387:35)
+2022-01-20 10:19:55:767 [HTTP] <-- POST /wd/hub/session 500 390 ms - 813
+2022-01-20 10:19:55:767 [HTTP] 
+2022-01-20 10:20:00:114 [HTTP] --> GET /wd/hub/session/adf75132-0bd6-4a1f-a9e3-70fccf60aa87/timeouts
