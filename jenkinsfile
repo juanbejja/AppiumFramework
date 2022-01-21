@@ -19,6 +19,12 @@ pipeline{
                 sh "mvn test -DSO='ANDROID'"
             }
         }
+        
+           stage("execute tests iOS") {
+            steps {
+                sh "mvn test -DSO='iOS'"
+            }
+        }
     }
     
     post {
