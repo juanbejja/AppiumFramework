@@ -70,7 +70,8 @@ public class Base {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability("avd", "emuladorECI");
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emuladorECI");
-			cap.setCapability(MobileCapabilityType.APP, Constantes.APPDIR+".apk");
+			cap.setCapability(MobileCapabilityType.APP,System.getenv("BITRISE_APK_PATH"));
+			//cap.setCapability(MobileCapabilityType.APP, Constantes.APPDIR+".apk");
 			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
 
 			driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), cap);
@@ -87,7 +88,8 @@ public class Base {
 			desiredCaps.setCapability("wdaStartupRetries", "4");
 			desiredCaps.setCapability("iosInstallPause", "8000");
 			desiredCaps.setCapability("wdaStartupRetryInterval", "20000");
-			desiredCaps.setCapability(MobileCapabilityType.APP, Constantes.APPDIR+".app");
+			desiredCaps.setCapability(MobileCapabilityType.APP,System.getenv("BITRISE_APK_PATH"));
+//			desiredCaps.setCapability(MobileCapabilityType.APP, Constantes.APPDIR+".app");
 			driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), desiredCaps);
 
 			return driver;
