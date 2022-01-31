@@ -1,7 +1,5 @@
 package eci.qa.AppiumFramework;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -71,9 +69,5 @@ public class ExtentReporterNG implements IReporter {
 		}
 	}
 
-	private Date getTime(long millis) {
-		Calendar calendar = Calendar.getInstance();
-		calendar.setTimeInMillis(millis);
-		return calendar.getTime();
-	}
+	
 }

@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-20T15:45:26Z" name="Suite" finished-at="2022-01-20T15:46:56Z" duration-ms="89490">
+  <suite name="Default suite" duration-ms="131640" started-at="2022-01-31T15:03:59Z" finished-at="2022-01-31T15:06:10Z">
     <groups>
     </groups>
-    <test started-at="2022-01-20T15:45:26Z" name="Test" finished-at="2022-01-20T15:46:56Z" duration-ms="89490">
-      <class name="eci.qa.AppiumFramework.firstIOSTest">
-        <test-method is-config="true" signature="killAllNodes()[pri:0, instance:eci.qa.AppiumFramework.firstIOSTest@8519cb4]" started-at="2022-01-20T15:45:26Z" name="killAllNodes" finished-at="2022-01-20T15:45:29Z" duration-ms="3024" status="PASS">
+    <test name="Default test" duration-ms="131640" started-at="2022-01-31T15:03:59Z" finished-at="2022-01-31T15:06:10Z">
+      <class name="eci.qa.AppiumFramework.TestLogin">
+        <test-method status="PASS" signature="killAllNodes()[pri:0, instance:eci.qa.AppiumFramework.TestLogin@79efed2d]" name="killAllNodes" is-config="true" duration-ms="3033" started-at="2022-01-31T15:03:59Z" finished-at="2022-01-31T15:04:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killAllNodes -->
-        <test-method signature="validarTituloServices()[pri:0, instance:eci.qa.AppiumFramework.firstIOSTest@8519cb4]" started-at="2022-01-20T15:45:29Z" name="validarTituloServices" finished-at="2022-01-20T15:46:01Z" duration-ms="31898" status="PASS">
+        <test-method status="PASS" signature="loginCorrecto()[pri:0, instance:eci.qa.AppiumFramework.TestLogin@79efed2d]" name="loginCorrecto" duration-ms="128551" started-at="2022-01-31T15:04:02Z" finished-at="2022-01-31T15:06:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validarTituloServices -->
-        <test-method signature="validarTituloServices2()[pri:0, instance:eci.qa.AppiumFramework.firstIOSTest@8519cb4]" started-at="2022-01-20T15:46:01Z" name="validarTituloServices2" finished-at="2022-01-20T15:46:28Z" duration-ms="26951" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validarTituloServices2 -->
-        <test-method signature="validarTituloServices3()[pri:0, instance:eci.qa.AppiumFramework.firstIOSTest@8519cb4]" started-at="2022-01-20T15:46:28Z" name="validarTituloServices3" finished-at="2022-01-20T15:46:56Z" duration-ms="27567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validarTituloServices3 -->
-        <test-method is-config="true" signature="killProcess()[pri:0, instance:eci.qa.AppiumFramework.firstIOSTest@8519cb4]" started-at="2022-01-20T15:46:56Z" name="killProcess" finished-at="2022-01-20T15:46:56Z" duration-ms="25" status="PASS">
+        </test-method> <!-- loginCorrecto -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:eci.qa.AppiumFramework.TestLogin@79efed2d]" name="killProcess" is-config="true" duration-ms="37" started-at="2022-01-31T15:06:10Z" finished-at="2022-01-31T15:06:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-      </class> <!-- eci.qa.AppiumFramework.firstIOSTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- eci.qa.AppiumFramework.TestLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

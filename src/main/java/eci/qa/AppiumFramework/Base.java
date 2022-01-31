@@ -54,25 +54,23 @@ public class Base {
 		return isServerRunning;
 	}
 
-	public static AppiumDriver<MobileElement> capabilities(String app) throws IOException, InterruptedException {
+	public static AppiumDriver<MobileElement> capabilities(String appname) throws IOException, InterruptedException {
+		FileInputStream fis = new FileInputStream(Constantes.GLOBAL_PROPERTIES);
+		Properties prop = new Properties();
+		prop.load(fis);
 
-		String SO = System.getProperty("SO");
+		String SO = (String) prop.get("SO");
+//		String SO ="ANDROID";
 
 		switch (SO) {
 
 		case "ANDROID":
 			System.out.println("SO ANDROID");
 
-			FileInputStream fis = new FileInputStream(
-					System.getProperty("user.dir") + "/src/main/java/eci/qa/AppiumFramework/global.properties");
-			Properties prop = new Properties();
-			prop.load(fis);
-
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability("avd", "emuladorECI");
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emuladorECI");
-			cap.setCapability(MobileCapabilityType.APP, prop.get(app));
-//			cap.setCapability("isHeadless", true);
+			cap.setCapability(MobileCapabilityType.APP, Constantes.APPDIR+".apk");
 			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
 
 			driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), cap);
@@ -84,13 +82,12 @@ public class Base {
 			DesiredCapabilities desiredCaps = new DesiredCapabilities();
 
 			desiredCaps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.2");
-			desiredCaps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8");
+			desiredCaps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 13");
 			desiredCaps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 			desiredCaps.setCapability("wdaStartupRetries", "4");
 			desiredCaps.setCapability("iosInstallPause", "8000");
 			desiredCaps.setCapability("wdaStartupRetryInterval", "20000");
-			String appios = "/Users/juan.pablo.bejarano/Desktop/elcorteinglesPRE.app";
-			desiredCaps.setCapability(MobileCapabilityType.APP, appios);
+			desiredCaps.setCapability(MobileCapabilityType.APP, Constantes.APPDIR+".app");
 			driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), desiredCaps);
 
 			return driver;

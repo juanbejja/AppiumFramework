@@ -7,11 +7,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import eci.qa.pageObjects.HomePage;
 import eci.qa.pageObjects.InitPage;
+import eci.qa.pageObjects.LoginPage;
+import eci.qa.pageObjects.ServicesPage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
-public class firstIOSTest extends Base {
+public class TestLogin extends Base {
 
 	@BeforeTest
 	public void killAllNodes() throws IOException, InterruptedException {
@@ -28,7 +31,7 @@ public class firstIOSTest extends Base {
 	}
 
 	@Test
-	public void validarTituloServices() throws IOException, InterruptedException {
+	public void loginCorrecto() throws IOException, InterruptedException {
 
 		System.out.println(System.getProperty("user.dir"));
 
@@ -40,9 +43,31 @@ public class firstIOSTest extends Base {
 
 		InitPage init = new InitPage(driver);
 
+//		HomePage home = new HomePage(driver);
+//
+//		ServicesPage servicep = new ServicesPage(driver);
+//
+//		LoginPage login = new LoginPage(driver);
+
 		init.clickBtnAcceptCookies();
 
-		// steps
+		init.clickBtnPermNotificaciones();
+
+//		home.clickBtnServicios();
+//
+//		servicep.clickBtnCompraManosLibres();
+//
+//		login.sendDataInputEmail("m.garcia.rebollo@accenture.com");
+//
+//		login.sendDataInputContrasena("Accenture");
+//
+//		login.clickBtnIniciarSesion();
+//
+//		home.existBtnServicios();
+
+		driver.closeApp();
+
+		driver.quit();
 
 		service.stop();
 
